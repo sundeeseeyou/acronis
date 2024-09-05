@@ -17,7 +17,7 @@ function NavItem({ children }) {
         as="a"
         href="#"
         variant="paragraph"
-        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:text-[#FFD600] active:text-[#2e2e2e] transition-colors"
+        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:underline active:text-[#ff5656] transition-colors"
       >
         {children}
       </Typography>
@@ -38,8 +38,8 @@ function MainHeader() {
 
   return (
     <>
-      <Navbar shadow={false} fullWidth className="border-0 px-0 py-2">
-        <div className="mx-auto flex items-center justify-between py-2 px-8">
+      <Navbar shadow={false} fullWidth className="border-0 px-12 py-2">
+        <div className="mx-auto flex items-center justify-between py-2">
           <img
             src={AcronisImage}
             className="h-auto w-32"
@@ -53,7 +53,7 @@ function MainHeader() {
             <NavItem>Contact</NavItem>
           </ul>
           <div className="flex items-center gap-4">
-            <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-6 py-3 text-base ">
+            <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-6 py-3 text-base hidden lg:flex">
               GET STARTED
             </Button>
           </div>
@@ -86,7 +86,7 @@ function MainHeader() {
       </Navbar>
 
       {/* Banner below Navbar */}
-      <header className="px-8 py-2">
+      <header className="px-12 py-2">
         <Banner />
       </header>
     </>

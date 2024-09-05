@@ -3,10 +3,10 @@ import OurProduct from "./components/OurProduct";
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-100">
       <MainHeader />
       <OurProduct />
-    </>
+    </div>
   );
 }
 

@@ -4,7 +4,7 @@ import { Typography, Button } from "@material-tailwind/react";
 function Banner() {
   return (
     <>
-      <div className="relative max-w-full mx-auto rounded-[50px] h-[90vh] overflow-hidden">
+      <div className="relative max-w-full mx-auto rounded-3xl h-[85vh] overflow-hidden">
         {/* Background Image */}
         <img
           src={BannerImg}
@@ -25,16 +25,16 @@ function Banner() {
           </Typography>
           <Typography
             variant="lead"
-            className="w-full text-white lg:text-lg text-base"
+            className="w-full text-white lg:text-lg text-base self-center mb-10"
           >
             The time is now for it to be okay to be great. For being a bright
             color. For standing out.
           </Typography>
-          <div className="flex items-center gap-4 my-4">
-            <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-8 py-3 text-base ">
-              GET STARTED
-            </Button>
-          </div>
+          {/* <div className="flex items-center gap-8 my-4"> */}
+          <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-8 text-base hover:bg-[#dab71c] ">
+            GET STARTED
+          </Button>
+          {/* </div> */}
         </div>
       </div>
     </>
