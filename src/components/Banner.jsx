@@ -31,7 +31,7 @@ function Banner() {
             color. For standing out.
           </Typography>
           {/* <div className="flex items-center gap-8 my-4"> */}
-          <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-8 text-base hover:bg-[#dab71c] ">
+          <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-8 text-base hover:bg-[#dab71c] hover:shadow-lg">
             GET STARTED
           </Button>
           {/* </div> */}

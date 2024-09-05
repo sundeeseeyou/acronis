@@ -6,6 +6,20 @@ import {
   ServerIcon,
 } from "@heroicons/react/24/solid";
 
+function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
+  return (
+    <div
+      className={`flex items-start justify-center flex-col bg-white p-[3vw] rounded-2xl border-primeColor hover:scale-105 border-4 h-[25vw] ${extraMargin}`}
+    >
+      <IconComponent className="h-12 w-12 text-primeColor" />
+      <Typography className="mt-4 text-lg font-semibold">{titleBox}</Typography>
+      <Typography className="text-gray-600 text-left mt-4">
+        {description}
+      </Typography>
+    </div>
+  );
+}
+
 export function OurProduct() {
   return (
     <section className="px-8 py-10 mx-auto my-8">
@@ -34,49 +48,30 @@ export function OurProduct() {
 
         {/* Box Section (Icons + Text) */}
         <div className="lg:w-1/2 w-full grid grid-cols-2 gap-8">
-          {/* Column 1 */}
           <div className="flex flex-col gap-8">
-            <div className="flex items-center justify-center flex-col bg-white p-[3vw] rounded-2xl shadow-lg h-[25vw] border-4 border-[#2e2e2e] ">
-              <ShieldCheckIcon className="h-12 w-12 text-blue-500" />
-              <Typography className="mt-4 text-lg font-semibold">
-                Security
-              </Typography>
-              <Typography className="text-gray-600 text-center">
-                Protect your data with the best-in-class security features.
-              </Typography>
-            </div>
-            <div className="flex items-center justify-center flex-col bg-white p-[3vw] rounded-2xl shadow-lg h-[25vw] border-4 border-[#2e2e2e]">
-              <LockClosedIcon className="h-12 w-12 text-blue-500" />
-              <Typography className="mt-4 text-lg font-semibold">
-                Data Encryption
-              </Typography>
-              <Typography className="text-gray-600 text-center">
-                Secure all your data through advanced encryption protocols.
-              </Typography>
-            </div>
+            <BoxItems
+              IconComponent={CloudIcon}
+              titleBox="Backup & Restore Automation"
+              description="Ini adalah"
+            />
+            <BoxItems
+              IconComponent={ShieldCheckIcon}
+              titleBox="Hello"
+              description="Ini adalah"
+            />
           </div>
-
-          {/* Column 2 */}
           <div className="flex flex-col gap-8">
-            <div className="flex items-center justify-center flex-col bg-white p-[3vw] rounded-2xl shadow-lg h-[25vw] mt-16 lg:mt-8 border-4 border-[#2e2e2e]">
-              <CloudIcon className="h-12 w-12 text-blue-500" />
-              <Typography className="mt-4 text-lg font-semibold">
-                Cloud Backup
-              </Typography>
-              <Typography className="text-gray-600 text-center">
-                Easily backup your data to the cloud and ensure availability.
-              </Typography>
-            </div>
-            <div className="flex items-center justify-center flex-col bg-white p-[3vw] rounded-2xl shadow-lg h-[25vw] lg:mt-8 border-4 border-[#2e2e2e]">
-              <ServerIcon className="h-12 w-12 text-blue-500" />
-              <Typography className="mt-4 text-lg font-semibold">
-                Server Protection
-              </Typography>
-              <Typography className="text-gray-600 text-center">
-                Ensure the safety of your servers with powerful protection
-                tools.
-              </Typography>
-            </div>
+            <BoxItems
+              IconComponent={LockClosedIcon}
+              titleBox="Hello"
+              description="Ini adalah"
+              extraMargin="mt-16 lg:mt-8"
+            />
+            <BoxItems
+              IconComponent={ServerIcon}
+              titleBox="Hello"
+              description="Ini adalah"
+            />
           </div>
         </div>
       </div>
