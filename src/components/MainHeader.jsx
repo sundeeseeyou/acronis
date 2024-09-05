@@ -17,7 +17,7 @@ function NavItem({ children }) {
         as="a"
         href="#"
         variant="paragraph"
-        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:text-[#FFD600] active:text-[#2e2e2e] transition-colors"
+        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:text-[#120c4b] active:text-[#2e2e2e] transition-colors"
       >
         {children}
       </Typography>
@@ -38,7 +38,7 @@ function MainHeader() {
 
   return (
     <>
-      <Navbar shadow={false} fullWidth className="border-0">
+      <Navbar shadow={false} fullWidth className="border-0 px-0 py-2">
         <div className="mx-auto flex items-center justify-between py-2 px-8">
           <img
             src={AcronisImage}
