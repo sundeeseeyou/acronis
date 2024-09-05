@@ -17,7 +17,7 @@ function NavItem({ children }) {
         as="a"
         href="#"
         variant="paragraph"
-        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:text-[#120c4b] active:text-[#2e2e2e] transition-colors"
+        className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:text-[#FFD600] active:text-[#2e2e2e] transition-colors"
       >
         {children}
       </Typography>
@@ -53,7 +53,7 @@ function MainHeader() {
             <NavItem>Contact</NavItem>
           </ul>
           <div className="flex items-center gap-4">
-            <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-8 py-3 text-base ">
+            <Button className="bg-[#FFD600] rounded-2xl text-[#2e2e2e] px-6 py-3 text-base ">
               GET STARTED
             </Button>
           </div>

@@ -3,7 +3,7 @@ export default function OurProduct() {
     <>
       <section>
         <div className="flex flex-row gap-4">
-          <div></div>
+          <div className="bg-black w-4/5 h-full"></div>
         </div>
       </section>
     </>
