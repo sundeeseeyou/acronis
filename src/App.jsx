@@ -1,14 +1,17 @@
-import MainHeader from "./components/MainHeader";
+import NavigationBar from "./components/NavigationBar";
+import BannerImage from "./components/BannerImage";
 import OurProduct from "./components/OurProduct";
 import Features from "./components/Features";
+import "./App.css";
 
 function App() {
   return (
-    <div className="bg-gray-100">
-      <MainHeader />
+    <>
+      <NavigationBar />
+      <BannerImage />
       <OurProduct />
       <Features />
-    </div>
+    </>
   );
 }
 

@@ -22,7 +22,7 @@ function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
 
 export function OurProduct() {
   return (
-    <section className="px-8 py-10 mx-auto my-8">
+    <section className="py-10 mx-auto my-8">
       <div className="w-full flex flex-col lg:flex-row gap-16 items-center justify-between">
         {/* Text Section */}
         <div id="product" className="lg:w-1/2 w-full">

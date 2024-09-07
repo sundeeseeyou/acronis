@@ -1,10 +1,10 @@
 import BannerImg from "../assets/Acronis/Banner.jpg";
 import { Typography, Button } from "@material-tailwind/react";
 
-function Banner() {
+function BannerImage() {
   return (
     <>
-      <div className="relative max-w-full mx-auto rounded-3xl h-[85vh] overflow-hidden">
+      <header className="relative w-full mx-auto rounded-3xl h-[85vh] overflow-hidden">
         {/* Background Image */}
         <img
           src={BannerImg}
@@ -13,7 +13,7 @@ function Banner() {
         />
 
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 text-white p-4 text-center">
+        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 text-white text-center w-full">
           <Typography
             variant="h2"
             color="white"
@@ -36,9 +36,9 @@ function Banner() {
           </Button>
           {/* </div> */}
         </div>
-      </div>
+      </header>
     </>
   );
 }
 
-export default Banner;
+export default BannerImage;
