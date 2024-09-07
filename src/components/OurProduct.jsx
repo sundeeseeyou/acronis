@@ -9,7 +9,7 @@ import {
 function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
   return (
     <div
-      className={`flex items-start justify-center flex-col bg-white p-[3vw] rounded-2xl border-primeColor hover:scale-105 border-4 h-[25vw] ${extraMargin}`}
+      className={`flex items-start justify-center flex-col bg-white p-[3vw] rounded-2xl border-primeColor hover:transition-shadow border-4 h-[25vw] ${extraMargin}`}
     >
       <IconComponent className="h-12 w-12 text-primeColor" />
       <Typography className="mt-4 text-lg font-semibold">{titleBox}</Typography>
