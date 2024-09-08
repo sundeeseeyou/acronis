@@ -22,7 +22,7 @@ export function OurProduct() {
     <section className="py-10 mx-auto my-8">
       <div className="w-full flex flex-col lg:flex-row gap-16 items-center justify-between">
         {/* Text Section */}
-        <div id="product" className="lg:w-1/2 w-full">
+        <div id="product" className="lg:w-1/2 w-1/2">
           <Typography
             variant="small"
             className="text-primeColor font-semibold text-xl"
@@ -35,7 +35,7 @@ export function OurProduct() {
           >
             Acronis Cyber Protect Cloud
           </Typography>
-          <Typography className="font-normal !text-textColor mt-4">
+          <Typography className="font-normal !text-textColor">
             This is the paragraph where you can write more details about your
             product. Keep your user engaged by providing meaningful information.
             Add a button if you want the user to see more. We are here to make

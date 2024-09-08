@@ -4,10 +4,10 @@ import BannerImg from "../assets/Acronis/Banner.jpg";
 export default function Features() {
   return (
     <>
-      <section className="py-10 mx-auto my-8">
+      <section className="pt-5 pb-3 mx-auto">
         <Typography
           variant="h2"
-          className="text-primeColor text-4xl lg:text-4xl font-black leading-none py-4"
+          className="text-primeColor text-4xl lg:text-6xl font-black leading-none py-4"
         >
           Why Acronis?
         </Typography>
