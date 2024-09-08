@@ -7,6 +7,7 @@ import Testimonial from "./components/Testimonial";
 import "./App.css";
 import CallToAction from "./components/CallToAction";
 import FooterWithSocial from "./components/FooterWithSocial";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Brand />
       <Testimonial />
       <CallToAction />
+      <Contact />
       <FooterWithSocial />
     </>
   );

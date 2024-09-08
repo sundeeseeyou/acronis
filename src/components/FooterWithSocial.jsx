@@ -59,9 +59,7 @@ export default function FooterWithSocial() {
               as="a"
               href="https://instagram.com"
               className="opacity-80 transition-opacity hover:opacity-100"
-            >
-              {""}
-            </Typography>
+            ></Typography>
           </div>
         </div>
       </div>
