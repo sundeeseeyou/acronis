@@ -17,30 +17,19 @@ export default function Features() {
           here to make life better.
         </Typography>
 
-        <div className="container mx-auto py-12">
-          <div className="grid gap-6 grid-cols-4 grid-rows-4 lg:grid-cols-6">
-            {/* Row 1 */}
-            <div className="bg-primeColor p-4 h-full rounded-xl flex justify-center items-center col-start-1 col-end-2 lg:col-span-2">
-              <Typography className="text-white text-lg font-bold">
-                Caption 1
-              </Typography>
-            </div>
-            <div className="bg-yellow-400 p-4 h-48 rounded-xl flex justify-center items-center lg:col-span-1">
-              <Typography className="text-gray-800 text-lg font-bold">
-                Caption 2
-              </Typography>
-            </div>
-            {/* Row 2 */}
-            <div className="bg-primeColor p-4 h-48 lg:h-96 rounded-xl flex justify-center items-center lg:row-span-6">
-              <Typography className="text-white text-lg font-bold">
-                Caption 3
-              </Typography>
-            </div>
-            <div className="bg-yellow-400 p-4 h-48 lg:h-64 rounded-xl flex justify-center items-center lg:col-span-2">
-              <Typography className="text-gray-800 text-lg font-bold">
-                Caption 4
-              </Typography>
-            </div>
+        <div className="grid grid-cols-4 my-8 gap-4">
+          <div className="bg-blue-900 text-white flex justify-center items-center p-6 rounded-xl col-span-3 row-span-1 h-64 lg:h-96">
+            Caption 1
+          </div>
+          <div className="bg-yellow-500 text-white flex justify-center items-center p-6 rounded-xl col-span-1 row-span-1 h-64 lg:h-96">
+            Caption 2
+          </div>
+
+          <div className="bg-blue-900 text-white flex justify-center items-center p-6 rounded-xl col-span-1 row-span-1 h-64 lg:h-96">
+            Caption 3
+          </div>
+          <div className="bg-yellow-500 text-white flex justify-center items-center p-6 rounded-xl col-span-3 row-span-1 h-64 lg:h-96">
+            Caption 4
           </div>
         </div>
       </section>

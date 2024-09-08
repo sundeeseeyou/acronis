@@ -1,19 +1,16 @@
 import { Typography } from "@material-tailwind/react";
-import {
-  ShieldCheckIcon,
-  CloudIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/24/solid";
+import { RiEarthquakeFill, RiShieldCheckFill } from "react-icons/ri";
+import { MdDevices } from "react-icons/md";
+import { LuDatabaseBackup } from "react-icons/lu";
 
 function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
   return (
     <div
-      className={`flex items-start justify-center flex-col bg-white p-[3vw] rounded-2xl border-primeColor hover:transition-shadow border-4 h-[25vw] ${extraMargin}`}
+      className={`flex items-start justify-center flex-col bg-white px-8 py-4 rounded-2xl border-primeColor hover:transition-shadow border-4 h-[25vw] ${extraMargin}`}
     >
       <IconComponent className="h-12 w-12 text-primeColor" />
       <Typography className="mt-4 text-lg font-semibold">{titleBox}</Typography>
-      <Typography className="text-gray-600 text-left mt-4">
+      <Typography className="text-[#2e2e2e] text-sm text-left mt-4">
         {description}
       </Typography>
     </div>
@@ -50,27 +47,27 @@ export function OurProduct() {
         <div className="lg:w-1/2 w-full grid grid-cols-2 gap-8">
           <div className="flex flex-col gap-8">
             <BoxItems
-              IconComponent={CloudIcon}
+              IconComponent={LuDatabaseBackup}
               titleBox="Backup & Restore Automation"
-              description="Ini adalah"
+              description="Ensures seamless data protection by automating backup processes, reducing downtime, and enhancing system reliability."
             />
             <BoxItems
-              IconComponent={ShieldCheckIcon}
-              titleBox="Hello"
-              description="Ini adalah"
+              IconComponent={MdDevices}
+              titleBox="Endpoint Management"
+              description="Simplifies the control of all connected devices with centralized monitoring, updates, and security management."
             />
           </div>
           <div className="flex flex-col gap-8">
             <BoxItems
-              IconComponent={LockClosedIcon}
-              titleBox="Hello"
-              description="Ini adalah"
+              IconComponent={RiShieldCheckFill}
+              titleBox="Cyber Security"
+              description="Provides advanced protection against cyber threats with real-time monitoring, AI-based threat detection, and automated defense responses."
               extraMargin="mt-16 lg:mt-8"
             />
             <BoxItems
-              IconComponent={ServerIcon}
-              titleBox="Hello"
-              description="Ini adalah"
+              IconComponent={RiEarthquakeFill}
+              titleBox="Disaster Recovery"
+              description="Helps maintain business continuity by enabling fast and reliable recovery of data and systems after a disaster."
             />
           </div>
         </div>
