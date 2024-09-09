@@ -8,6 +8,7 @@ import "./App.css";
 import CallToAction from "./components/CallToAction";
 import FooterWithSocial from "./components/FooterWithSocial";
 import Contact from "./components/Contact";
+import ReactGA from "react-ga";
 
 function App() {
   return (

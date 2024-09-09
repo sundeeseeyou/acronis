@@ -21,10 +21,10 @@ function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
 
 export function OurProduct() {
   return (
-    <section className="lg:py-10 py-4 mx-auto lg:my-8">
+    <section id="product" className="lg:py-10 py-4 mx-auto lg:my-8">
       <div className="w-full flex flex-col gap-4 lg:flex-row lg:gap-16 items-center justify-between">
         {/* Text Section */}
-        <div id="product" className=" lg:w-1/2 w-full">
+        <div className=" lg:w-1/2 w-full">
           <Typography
             variant="small"
             className="text-primeColor font-semibold lg:text-xl text-sm"
@@ -32,7 +32,7 @@ export function OurProduct() {
             Our Product
           </Typography>
           <Typography
-            variant="h2"
+            variant="h3"
             className="text-primeColor text-2xl lg:text-5xl font-black leading-none py-4"
           >
             Acronis Cyber Protect Cloud

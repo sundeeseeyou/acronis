@@ -7,7 +7,7 @@ import Image4 from "../assets/Acronis/easy-access.jpg";
 export default function Features() {
   return (
     <>
-      <section className="py-4 mx-auto lg:my-8">
+      <section id="features" className="py-4 mx-auto lg:my-8">
         <Typography
           variant="h2"
           className="text-primeColor text-2xl lg:text-5xl font-black leading-none py-4"

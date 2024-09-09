@@ -83,18 +83,24 @@ import {
   CardHeader,
 } from "@material-tailwind/react";
 
-import AvatarImage from "../assets/avatar.jpg";
+import User1 from "../assets/Acronis/user1.jpg";
+import User2 from "../assets/Acronis/user2.jpg";
+import User3 from "../assets/Acronis/user3.jpg";
 
 function TestimonialCard({ img, client, title, clientInfo }) {
   return (
-    <Card className="bg-white rounded-xl p-4">
+    <Card className="bg-white rounded-xl p-4 flex flex-col gap-4 justify-between">
       <CardHeader color="transparent" floated={false} shadow={false}>
-        <Typography className="lg:mb-10 mb-4 text-md text-textColor font-bold">
+        <Typography className="text-md text-textColor font-bold">
           &quot;{title}&quot;
         </Typography>
       </CardHeader>
       <CardBody className="px-4 py-0 flex flex-row gap-2 justify-start items-center">
-        <img src={img} className="max-w-8 rounded-xl mr-2" alt={client} />
+        <img
+          src={img}
+          className="lg:w-[50px] object-cover lg:h-[50px] rounded-full mr-2"
+          alt={client}
+        />
         <div>
           <Typography variant="h5" className="text-primeColor">
             {client}
@@ -111,24 +117,24 @@ function TestimonialCard({ img, client, title, clientInfo }) {
 const testimonials = [
   {
     title:
-      "The team went above and beyond to ensure my issue was resolved quickly and efficiently. Truly outstanding!",
-    client: "Jessica Devis",
-    clientInfo: "Full Stack Developer @Netflix",
-    img: "/image/netflix.svg",
+      "Acronis Cyber Protect Cloud transformed my data management! User-friendly and reliable backups give me peace of mind. Highly recommended!",
+    client: "John Doe",
+    clientInfo: "Software Engineer",
+    img: User1,
   },
   {
     title:
-      "It have broadened my horizons and helped me advance my career. The community is incredibly supportive.",
-    client: "Marcell Glock",
+      "Best backup solution I've used! Acronis Cyber Protect Cloud's seamless integration and one-dashboard management make it easy to protect my files.",
+    client: "Jane Doe",
     clientInfo: "Graphic Designer",
-    img: "https://www.material-tailwind.com/image/Logo-coinbase.svg",
+    img: User2,
   },
   {
     title:
-      "It have broadened my horizons and helped me advance my career. The community is incredibly supportive.",
-    client: "Marcell Glock",
-    clientInfo: "Graphic Designer",
-    img: "${AvatarImage}",
+      "Using Acronis Cyber Protect Cloud has exceeded my expectations! The combination of data protection and cybersecurity is brilliant.",
+    client: "Alex Smith",
+    clientInfo: "Network Engineer",
+    img: User3,
   },
 ];
 

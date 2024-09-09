@@ -21,7 +21,13 @@ export default function CallToAction() {
             ripple={true}
             className="bg-subColor text-textColor font-extrabold !px-8 py-4 rounded-[50px]"
           >
-            Get Started
+            <Typography
+              className="lg:font-bold text-sm"
+              as={"a"}
+              href="https://devstaging.mybaticloud.com/index.php?rp=/store/acronis-cyber-protect-cloud"
+            >
+              GET STARTED
+            </Typography>
           </Button>
         </CardBody>
       </Card>

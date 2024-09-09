@@ -9,12 +9,12 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import AcronisImage from "../assets/Acronis/Acronis.svg.png";
 
-function NavItem({ children }) {
+function NavItem({ children, url }) {
   return (
     <li>
       <Typography
         as="a"
-        href="#"
+        href={url}
         variant="paragraph"
         className="text-[#2e2e2e] flex items-center gap-2 font-semibold hover:underline active:text-[#ff5656] transition-colors"
       >
@@ -45,14 +45,20 @@ function NavigationBar() {
           alt="logo-acronis"
         />
         <ul className="hidden items-center gap-8 lg:flex">
-          <NavItem>Home</NavItem>
-          <NavItem>Product</NavItem>
-          <NavItem>About</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem url="index.html">Home</NavItem>
+          <NavItem url="#product">Product</NavItem>
+          <NavItem url="#features">Features</NavItem>
+          <NavItem url="#contact">Contact</NavItem>
         </ul>
         <div className="flex items-center gap-2">
           <Button className="bg-[#FFD600] px-4 py-2 rounded-lg lg:rounded-2xl lg:px-8 lg:py-4 text-[#2e2e2e] text-sm lg:text-base lg:flex">
-            GET STARTED
+            <Typography
+              className="lg:font-bold text-sm"
+              as={"a"}
+              href="https://devstaging.mybaticloud.com/index.php?rp=/store/acronis-cyber-protect-cloud"
+            >
+              GET STARTED
+            </Typography>
           </Button>
           <IconButton
             variant="text"
