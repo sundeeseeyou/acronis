@@ -4,10 +4,7 @@ export default function CallToAction() {
   return (
     <section className="h-[20vh]">
       <Card shadow={false} className="lg:min-h-[10vh] px-6 py-4 bg-primeColor">
-        <CardBody
-          shadow={false}
-          className="flex flex-row items-center justify-between"
-        >
+        <CardBody className="flex flex-row items-center justify-between">
           <div className="flex flex-col">
             <Typography variant="h3" color="white" className="font-bold">
               Get the protection now!

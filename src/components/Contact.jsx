@@ -31,14 +31,13 @@ export default function Contact() {
         </CardBody>
 
         <CardBody className="w-full">
-          <form className="mt-8 mb-2 w-full max-w-screen-lg sm:w-96" fullWidth>
+          <form className="mt-8 mb-2 w-full max-w-screen-lg sm:w-96">
             <div className="mb-1 flex flex-col gap-6">
               <Typography variant="h6" color="blue-gray" className="-mb-3">
                 Your Name
               </Typography>
               <Input
-                fullWidth
-                size="xl"
+                size="lg"
                 placeholder="name@mail.com"
                 className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                 labelProps={{
@@ -70,7 +69,6 @@ export default function Contact() {
             <Button
               ripple={true}
               className="mt-6 py-4 rounded-2xl bg-primeColor"
-              fullWidth
             >
               SEND
             </Button>

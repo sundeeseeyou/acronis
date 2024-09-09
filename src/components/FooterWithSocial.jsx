@@ -10,7 +10,7 @@ export default function FooterWithSocial() {
         <li>
           <Typography
             as="a"
-            href="#"
+            href="index.html"
             className="font-normal transition-colors hover:text-primeColor focus:text-primeColor"
           >
             Home
