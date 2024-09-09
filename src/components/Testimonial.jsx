@@ -48,7 +48,7 @@
 //       <div className="flex flex-col gap-4">
 //         <Typography
 //           variant="h2"
-//           className="text-primeColor text-4xl lg:text-6xl font-black leading-none py-4"
+//           className="text-primeColor text-4xl lg:text-4xl font-black leading-none py-4"
 //         >
 //           What they say
 //         </Typography>
@@ -87,13 +87,14 @@ import AvatarImage from "../assets/avatar.jpg";
 
 function TestimonialCard({ img, client, title, clientInfo }) {
   return (
-    <Card className="bg-white rounded-2xl p-4">
+    <Card className="bg-white rounded-xl p-4">
       <CardHeader color="transparent" floated={false} shadow={false}>
-        <Typography className="lg:mb-10 mb-4 text-lg text-textColor font-bold">
+        <Typography className="lg:mb-10 mb-4 text-md text-textColor font-bold">
           &quot;{title}&quot;
         </Typography>
       </CardHeader>
-      <CardBody className="flex flex-row-reverse gap-2 justify-start items-center">
+      <CardBody className="px-4 py-0 flex flex-row gap-2 justify-start items-center">
+        <img src={img} className="max-w-8 rounded-xl mr-2" alt={client} />
         <div>
           <Typography variant="h5" className="text-primeColor">
             {client}
@@ -102,7 +103,6 @@ function TestimonialCard({ img, client, title, clientInfo }) {
             {clientInfo}
           </Typography>
         </div>
-        <img src={img} className="max-w-8" alt={client} />
       </CardBody>
     </Card>
   );
@@ -137,16 +137,10 @@ export function Testimonial() {
     <section className="m py-10 mx-auto my-8">
       <div className="flex flex-col gap-4">
         <Typography
-          variant="h2"
-          className="text-primeColor text-4xl lg:text-6xl font-black leading-none py-4"
+          variant="h3"
+          className="text-primeColor text-4xl lg:text-5xl font-black leading-none py-4"
         >
           What they say
-        </Typography>
-        <Typography className="font-normal w-[60vw]">
-          This is the paragraph where you can write more details about your
-          product. Keep your user engaged by providing meaningful information.
-          Add a button if you want the user to see more. We are here to make
-          life better.
         </Typography>
 
         <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">

@@ -1,54 +1,58 @@
-import { Typography } from "@material-tailwind/react";
+import { Typography, Card } from "@material-tailwind/react";
 import { RiEarthquakeFill, RiShieldCheckFill } from "react-icons/ri";
 import { MdDevices } from "react-icons/md";
 import { LuDatabaseBackup } from "react-icons/lu";
 
 function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
   return (
-    <div
-      className={`flex items-start justify-center flex-col bg-white px-8 py-4 rounded-2xl border-primeColor hover:transition-shadow border-4 h-[25vw] ${extraMargin}`}
+    <Card
+      className={`flex items-start justify-start flex-col bg-white p-4 lg:p-8 lg:rounded-2xl h-[50vw] rounded-xl hover:transition-shadow lg:h-[23vw] ${extraMargin}`}
     >
-      <IconComponent className="h-12 w-12 text-primeColor" />
-      <Typography className="mt-4 text-lg font-semibold">{titleBox}</Typography>
-      <Typography className="text-[#2e2e2e] text-sm text-left mt-4">
+      <IconComponent className="w-[30px] h-auto lg:h-12 lg:w-auto text-primeColor" />
+      <Typography className=" text-primeColor mt-2 text-md leading-[1rem] lg:mt-4 lg:text-lg font-semibold ">
+        {titleBox}
+      </Typography>
+      <Typography className=" text-[#2e2e2e] text-[0.7rem] lg:text-sm text-left mt-2 lg:mt-4 w-full break-words">
         {description}
       </Typography>
-    </div>
+    </Card>
   );
 }
 
 export function OurProduct() {
   return (
-    <section className="py-10 mx-auto my-8">
-      <div className="w-full flex flex-col lg:flex-row gap-16 items-center justify-between">
+    <section className="lg:py-10 py-4 mx-auto lg:my-8">
+      <div className="w-full flex flex-col gap-4 lg:flex-row lg:gap-16 items-center justify-between">
         {/* Text Section */}
-        <div id="product" className="lg:w-1/2 w-1/2">
+        <div id="product" className=" lg:w-1/2 w-full">
           <Typography
             variant="small"
-            className="text-primeColor font-semibold text-xl"
+            className="text-primeColor font-semibold lg:text-xl text-sm"
           >
             Our Product
           </Typography>
           <Typography
             variant="h2"
-            className="text-primeColor text-4xl lg:text-6xl font-black leading-none py-4"
+            className="text-primeColor text-2xl lg:text-5xl font-black leading-none py-4"
           >
             Acronis Cyber Protect Cloud
           </Typography>
-          <Typography className="font-normal !text-textColor">
-            This is the paragraph where you can write more details about your
-            product. Keep your user engaged by providing meaningful information.
-            Add a button if you want the user to see more. We are here to make
-            life better.
+          <Typography className="font-normal text-[0.8rem] lg:text-base text-textColor">
+            Acronis Cyber Protect Cloud is a modern backup and management
+            platform that meets all your server and data security needs. As an
+            all-in-one solution, Acronis reduces costs and complexity by
+            eliminating the need for multiple security tools. It provides data
+            protection, cybersecurity, and endpoint management in a single
+            platform.
           </Typography>
         </div>
 
         {/* Box Section (Icons + Text) */}
-        <div className="lg:w-1/2 w-full grid grid-cols-2 gap-8">
-          <div className="flex flex-col gap-8">
+        <div className="lg:w-1/2 w-full grid grid-cols-2 lg:gap-4 gap-4">
+          <div className="flex flex-col gap-4">
             <BoxItems
               IconComponent={LuDatabaseBackup}
-              titleBox="Backup & Restore Automation"
+              titleBox="Backup & Restore"
               description="Ensures seamless data protection by automating backup processes, reducing downtime, and enhancing system reliability."
             />
             <BoxItems
@@ -57,12 +61,12 @@ export function OurProduct() {
               description="Simplifies the control of all connected devices with centralized monitoring, updates, and security management."
             />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <BoxItems
               IconComponent={RiShieldCheckFill}
               titleBox="Cyber Security"
               description="Provides advanced protection against cyber threats with real-time monitoring, AI-based threat detection, and automated defense responses."
-              extraMargin="mt-16 lg:mt-8"
+              extraMargin="m-0 lg:mt-8"
             />
             <BoxItems
               IconComponent={RiEarthquakeFill}
