@@ -53,7 +53,7 @@ function NavigationBar() {
         <div className="flex items-center gap-2">
           <Button className="bg-[#FFD600] px-4 py-2 rounded-lg lg:rounded-2xl lg:px-8 lg:py-4 text-[#2e2e2e] text-sm lg:text-base lg:flex">
             <Typography
-              className="lg:font-bold text-sm"
+              className="lg:font-bold font-bold text-sm"
               as={"a"}
               href="https://devstaging.mybaticloud.com/index.php?rp=/store/acronis-cyber-protect-cloud"
             >

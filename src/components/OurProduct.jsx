@@ -6,7 +6,7 @@ import { LuDatabaseBackup } from "react-icons/lu";
 function BoxItems({ IconComponent, titleBox, description, extraMargin }) {
   return (
     <Card
-      className={`flex items-start justify-start flex-col bg-white p-4 lg:p-8 lg:rounded-2xl h-[50vw] rounded-xl hover:transition-shadow lg:h-[23vw] ${extraMargin}`}
+      className={`flex items-start justify-start flex-col bg-white p-4 lg:p-8 lg:rounded-2xl h-[60vw] rounded-xl hover:transition-shadow lg:h-[23vw] ${extraMargin}`}
     >
       <IconComponent className="w-[30px] h-auto lg:h-12 lg:w-auto text-primeColor" />
       <Typography className=" text-primeColor mt-2 text-md leading-[1rem] lg:mt-4 lg:text-lg font-semibold ">

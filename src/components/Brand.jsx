@@ -7,24 +7,22 @@ import { Typography } from "@material-tailwind/react";
 
 function ImageBrand({ imgLink, customClass }) {
   return (
-    <div
-      className={`flex justify-center items-center p-6 h-25 lg:h-35 lg:w-full ${customClass}`}
-    >
-      <img src={imgLink} />
+    <div className={`flex justify-center items-center p-2 ${customClass}`}>
+      <img src={imgLink} className="w-24 h-auto sm:w-28 md:w-32 lg:w-40" />
     </div>
   );
 }
 
 export default function Brand() {
   return (
-    <section className="flex flex-col justify-center items-center lg:py-4">
+    <section className="flex flex-col justify-center items-center py-2 lg:py-0">
       <Typography
         variant="paragraph"
         className="text-gray-500 font-thin text-sm"
       >
         Featured with
       </Typography>
-      <div className="flex flex-row gap-4 w-full h-[20vh]  py-4">
+      <div className="flex flex-wrap justify-center lg:justify-between items-center gap-2 lg:gap-4 w-full py-4">
         <ImageBrand imgLink={GoogleIcon} />
         <ImageBrand imgLink={CpanelIcon} />
         <ImageBrand imgLink={PleskIcon} />

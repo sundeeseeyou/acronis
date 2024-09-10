@@ -17,12 +17,13 @@ function BannerImage() {
           <Typography
             variant="h2"
             color="white"
-            className="lg:leading-snug text-xl lg:w-3xl lg:text-[4rem] font-extrabold "
+            className="lg:leading-snug text-4rem
+             lg:w-3xl lg:text-[4rem] font-extrabold "
           >
             #YOUCAN<span className="text-[#FFD600] leading-snug">REST</span>
           </Typography>
           {/* Adjust space here with a div instead of br */}
-          <div className="lg:my-[-20px]"></div>{" "}
+          <div className=" lg:my-[-20px]"></div>{" "}
           {/* Use my-2 for smaller space, adjust as needed */}
           <Typography
             variant="h2"
