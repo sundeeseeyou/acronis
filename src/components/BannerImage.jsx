@@ -1,41 +1,41 @@
-import BannerImg from "../assets/Acronis/geometric.jpg";
-import { Typography, Button } from "@material-tailwind/react";
+// import BannerImg from "../assets/Acronis/geometric.jpg";
+import { Typography } from "@material-tailwind/react";
 
 function BannerImage() {
   return (
     <>
       <header className="relative w-full mx-auto rounded-xl lg:rounded-3xl lg:h-[70vh] h-[25vh] overflow-hidden">
         {/* Background Image */}
-        <img
+        {/* <img
           src={BannerImg}
           alt="Banner"
           className="w-full object-cover h-full blur-[1px] lg:blur-sm"
-        />
+        /> */}
 
         {/* Text Overlay */}
-        <div className="absolute px-4 lg:px-8 inset-0 flex flex-col justify-center gap-2 items-center bg-black bg-opacity-40 text-white text-center w-full">
+        <div className="absolute px-4 lg:px-8 inset-0 flex flex-col justify-center gap-2 items-center bg-primeColor text-white text-center w-full">
           <Typography
             variant="h2"
             color="white"
-            className="lg:leading-snug text-4rem
+            className="lg:leading-snug text-[1.6rem]
              lg:w-3xl lg:text-[4rem] font-extrabold "
           >
             #YOUCAN<span className="text-[#FFD600] leading-snug">REST</span>
           </Typography>
           {/* Adjust space here with a div instead of br */}
-          <div className=" lg:my-[-20px]"></div>{" "}
+          <div className=" my-[-12px] lg:my-[-20px]"></div>{" "}
           {/* Use my-2 for smaller space, adjust as needed */}
           <Typography
             variant="h2"
             color="white"
-            className="lg:leading-snug text-xl lg:w-3xl lg:text-[4rem] font-extrabold "
+            className="lg:leading-[12px] text-[1.6rem] lg:w-3xl lg:text-[4rem] font-extrabold "
           >
             WE'LL DO OUR{" "}
             <span className="text-[#FFD600] leading-snug">BEST</span>
           </Typography>
           <Typography
             variant="lead"
-            className="w-full text-white text-[0.7rem] lg:text-xl self-center lg:px-8"
+            className="w-full text-white text-[0.7rem] lg:text-lg self-center lg:px-16"
           >
             Acronis Cyber Protect Cloud protects your system and data with
             automation backup and restore, anti malwares and virus, and rapid

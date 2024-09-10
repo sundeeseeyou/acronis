@@ -48,7 +48,7 @@ export default function Features() {
             </CardBody>
           </Card>
           {/*Grid no 2*/}
-          <Card className="w-full text-black text-4xl flex justify-center items-center rounded-xl col-span-2 h-[20vh] lg:h-96">
+          <Card className="w-full flex justify-center items-center rounded-xl col-span-2 h-[20vh] lg:h-96">
             <img
               src={Image2}
               alt="grid-2"
@@ -57,7 +57,7 @@ export default function Features() {
             <CardBody className="absolute w-full inset-0 flex flex-col justify-start text-left h-[20vh] lg:h-auto p-4 lg:px-10 lg:py-10 bg-black bg-opacity-30 rounded-xl">
               <Typography
                 variant="h3"
-                className="w-full text-white lg:text-xl text-sm self-start font-extrabold"
+                className="w-full text-white lg:text-4xl text-sm self-start font-extrabold"
               >
                 Top Notch Security
               </Typography>
@@ -81,7 +81,7 @@ export default function Features() {
             <CardBody className="absolute w-full inset-0 flex flex-col justify-start items-center text-left p-4 lg:px-10 lg:py-10  bg-black bg-opacity-50 rounded-xl">
               <Typography
                 variant="h3"
-                className="w-full text-white lg:text-xl text-sm font-extrabold"
+                className="w-full text-white lg:text-4xl text-sm font-extrabold"
               >
                 Easy Access
               </Typography>
