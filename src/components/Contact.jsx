@@ -21,6 +21,7 @@ export default function Contact() {
         <CardBody className="w-full">
           <div className="relative w-full mx-auto rounded-xl lg:rounded-2xl h-40 lg:h-[70vh] overflow-hidden">
             <img
+              loading="lazy"
               src={contactImg}
               alt="Banner"
               className="w-full object-cover h-full"

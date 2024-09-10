@@ -40,9 +40,8 @@ export default function FooterWithSocial() {
               <li>
                 <Typography
                   variant="h4"
-                  color="primeColor"
                   size="sm"
-                  className="mb-2"
+                  className="mb-2 text-primeColor"
                 >
                   Website
                 </Typography>
@@ -59,17 +58,16 @@ export default function FooterWithSocial() {
               <li>
                 <Typography
                   as="a"
-                  href="index.html"
+                  href="#product"
                   className="font-semibold text-primeColor hover:text-[#262477] focus:text-primeColor lg:mb-2"
                 >
                   Product
                 </Typography>
               </li>
               <li>
-                {" "}
                 <Typography
                   as="a"
-                  href="index.html"
+                  href="#features"
                   className="font-semibold text-primeColor hover:text-[#262477] focus:text-primeColor lg:mb-2"
                 >
                   Features
@@ -78,7 +76,7 @@ export default function FooterWithSocial() {
               <li>
                 <Typography
                   as="a"
-                  href="index.html"
+                  href="#contact"
                   className="font-semibold text-primeColor hover:text-[#262477] focus:text-primeColor"
                 >
                   Contact

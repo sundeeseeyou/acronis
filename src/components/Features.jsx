@@ -26,6 +26,7 @@ export default function Features() {
           {/*Grid no 1*/}
           <Card className="w-full flex justify-center items-center col-span-4  h-[20vh] lg:h-96 rounded-2xl ">
             <img
+              loading="lazy"
               src={Image1}
               alt="grid-1"
               className="w-full object-cover object-center h-full rounded-2xl blur-[2px] "
@@ -50,6 +51,7 @@ export default function Features() {
           {/*Grid no 2*/}
           <Card className="w-full flex justify-center items-center rounded-xl col-span-2 h-[20vh] lg:h-96">
             <img
+              loading="lazy"
               src={Image2}
               alt="grid-2"
               className="w-full object-cover object-bottom h-full rounded-2xl"
@@ -74,6 +76,7 @@ export default function Features() {
           {/*Grid no 3*/}
           <Card className="w-full flex justify-center items-center rounded-xl col-span-2 h-[20vh] lg:h-96">
             <img
+              loading="lazy"
               src={Image3}
               alt="grid-3"
               className="w-full object-cover object-right h-full rounded-2xl"
@@ -98,6 +101,7 @@ export default function Features() {
           {/*Grid no 4*/}
           <Card className="w-full flex justify-center items-center rounded-xl col-span-4 h-[20vh] lg:h-96">
             <img
+              loading="lazy"
               src={Image4}
               alt="grid-4"
               className="w-full object-cover object-center h-full rounded-2xl"

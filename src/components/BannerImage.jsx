@@ -1,18 +1,9 @@
-// import BannerImg from "../assets/Acronis/geometric.jpg";
 import { Typography } from "@material-tailwind/react";
 
 function BannerImage() {
   return (
     <>
       <header className="relative w-full mx-auto rounded-xl lg:rounded-3xl lg:h-[70vh] h-[25vh] overflow-hidden">
-        {/* Background Image */}
-        {/* <img
-          src={BannerImg}
-          alt="Banner"
-          className="w-full object-cover h-full blur-[1px] lg:blur-sm"
-        /> */}
-
-        {/* Text Overlay */}
         <div className="absolute px-4 lg:px-8 inset-0 flex flex-col justify-center gap-2 items-center bg-primeColor text-white text-center w-full">
           <Typography
             variant="h2"

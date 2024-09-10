@@ -24,6 +24,7 @@ function TestimonialCard({ img, client, title, clientInfo }) {
       </CardHeader>
       <CardBody className="px-4 py-0 flex flex-row gap-2 justify-start items-center">
         <img
+          loading="lazy"
           src={img}
           className="w-[40px] h-[40px] lg:w-[50px] object-cover lg:h-[50px] rounded-full mr-2"
           alt={client}
